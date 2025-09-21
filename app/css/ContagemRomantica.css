@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Dancing Script', cursive;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f5c0d0, #e397af); /* fundo romântico */
+}
+
+.contagem-container {
+  position: fixed;  /* garante ocupar toda a tela */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  text-align: center;
+  color: #fff;
+}
+
+.contagem-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 40px 50px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.mensagem {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.ampulheta {
+  width: 80px;
+  height: 160px;
+  border: 4px solid #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.2);
+  position: relative;
+}
+
+.areia {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #ff7f9f;
+  transition: height 1s linear;
+}
+
+.cronometro {
+  font-size: 2rem;
+  margin: 0;
+}

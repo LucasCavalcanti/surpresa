@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, #ffdde1, #fcefee);
+}
+
+/* Wrapper da página - centraliza tudo */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  padding: 20px;
+}
+
+/* Container da página Surpresa - transparente */
+.surpresaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent; /* sem card */
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Vídeo responsivo */
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+}
+.videoBox {
+  width: 65%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 18px;
+  border: 5px solid #ff6fa5;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Título e mensagem final */
+.surpresaContainer h1,
+.finalMessage {
+  color: #ff3d7a;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.finalMessage {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Música fixa no topo */
+.MusicaPlayer {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #ff3d7a;
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff6fa5, #ff3d7a);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 61, 122, 0.4);
+}

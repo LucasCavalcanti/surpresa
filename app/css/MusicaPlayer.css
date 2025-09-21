@@ -1,0 +1,40 @@
+.musica-player {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #f9f4ef;
+  border: 2px solid #d8c3a5;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 100;
+  color: #4b0082;
+}
+
+.btn-controle {
+  background: linear-gradient(45deg, #4b0082, #6a0dad);
+  color: gold;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(107, 11, 153, 0.4);
+  transition: background 0.3s ease;
+}
+
+.btn-controle:hover {
+  background: linear-gradient(45deg, #6a0dad, #4b0082);
+}
+
+.controle-volume input[type="range"] {
+  accent-color: #4b0082;
+  height: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
